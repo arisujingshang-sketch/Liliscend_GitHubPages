@@ -17,3 +17,17 @@
 #collab .partnership-title{font-size:clamp(2.2rem,3.2vw,3.9rem);line-height:.98;letter-spacing:-.035em;min-height:1.96em;overflow:visible}#collab .partnership-title span{display:block}
 /* Capability summary: image-free editorial three-column layout */
 .capability-section{padding-bottom:112px}.capability-section .heading{margin-bottom:38px}.capability-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.capability-item{min-height:220px;padding:31px clamp(20px,2.4vw,36px);background:transparent;border:0;border-right:1px solid var(--line)}.capability-item:last-child{border-right:0}.capability-item>b{display:block;color:#8fb8cb;font:500 10px var(--sans);letter-spacing:.15em;margin-bottom:18px}.capability-item h3{font:500 clamp(21px,2vw,28px)/1.25 var(--serif);color:#f1f8fa;letter-spacing:.01em;margin:0 0 17px}.capability-item p{margin:0;color:var(--muted);font-size:12px;line-height:1.9}@media(max-width:800px){.capability-section{padding-bottom:90px}.capability-item{min-height:0;padding:28px 22px}.capability-item h3{font-size:22px}}@media(max-width:520px){.capability-summary{grid-template-columns:1fr}.capability-item{padding:26px 0;border-right:0;border-bottom:1px solid var(--line)}.capability-item:last-child{border-bottom:0}.capability-item>b{margin-bottom:11px}.capability-item h3{margin-bottom:11px}}
+/* ========================================
+   SNS PERFORMANCE
+   スマホで重なる連番表示を完全に非表示
+========================================= */
+
+.numbers {
+  counter-reset: none;
+}
+
+.numbers .stat::before,
+.numbers .stat::after {
+  content: none !important;
+  display: none !important;
+}
